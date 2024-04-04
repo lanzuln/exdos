@@ -1,0 +1,106 @@
+.services_area {
+    padding-bottom: 142px;
+
+   
+    .col-xl-3 {
+        .single_services {
+            padding: 50px 40px;
+            transition: $transition;
+            &:hover{
+                background: $yellow_light;
+            }
+            &:hover .service_btn{
+                .button_inner{
+                    background: $blue;
+                    color: $c_white;
+                    a{
+                        color: $c_white;
+                    }
+                    span{
+                        img{
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+            }
+
+            border: {
+                top: 1px solid $c_black_grey;
+                bottom: 1px solid $c_black_grey;
+                left: 1px solid $c_black_grey;
+            }
+
+            border-radius: 20px;
+
+            .icon {
+                max-width: 92px;
+                margin-bottom: 30px;
+            }
+
+
+            .sub_title {
+                padding-bottom: 30px;
+            }
+
+            .list {
+                margin-bottom: 30px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        margin-bottom: 10px;
+                        position: relative;
+                        padding-left: 16px;
+
+                        &:last-child {
+                            padding-bottom: 0px;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            content: "";
+                            height: 8px;
+                            width: 8px;
+                            border-radius: 50%;
+                            background: $c_black_grey;
+                            transform: translate(0%, -50%);
+                        }
+                    }
+                }
+            }
+
+            .service_btn {
+                .button_inner {
+                    background-color: $yellow_light;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 6px 25px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: $transition;
+
+                    a {
+                        text-transform: capitalize;
+                        font-size: $font_18;
+                        line-height: 28px;
+                        color: $c_black;
+                        display: inline-block;
+                        transition: $transition;
+                    }
+                }
+            }
+
+        }
+        &:last-child .single_services{
+            border-right: 1px solid $c_black_grey;
+        }
+       
+    }
+  
+    
+}

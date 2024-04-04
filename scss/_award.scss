@@ -1,0 +1,39 @@
+.award_section {
+    background: $yellow_light;
+
+    .content {
+        h3{
+            padding-bottom: 30px;
+        }
+    }
+
+    .year {
+        .common {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 20px 20px 20px 0px;
+            border-bottom: 1px solid $c_black_grey;
+            &:last-child{
+                border-bottom: none;
+            }
+            &::after{
+                position: absolute;
+                left: 50%;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background: $c_black_grey;
+                content: "";
+                transform: translate(-50%, 0%);
+
+            }
+            .left{
+            h4{
+                padding-bottom: 0;
+            }
+            }
+        }
+    }
+}

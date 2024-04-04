@@ -1,0 +1,74 @@
+.project_area {
+    background: url('../img/project_bg.png');
+    @include bg;
+
+    .project_wrapper {
+        .content {
+            flex-basis: 50%;
+            padding-right: 30px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: block;
+                    margin-bottom: 36px;
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+
+                    a {
+                        font-size: 100px;
+                        line-height: 110px;
+                        color: $c_white;
+                        padding-right: 10px;
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            height: 1px;
+                            width: 1000%;
+                            background: $border_c;
+                            content: "";
+                            transition: $transition;
+                        }
+
+                        &:hover {
+                            color: $c_yellow;
+                        }
+
+                        &:hover::after {
+                            background: $c_yellow;
+                        }
+                        @media (max-width: 1500px) { 
+                            font-size: 90px;
+                         }
+                    }
+                }
+            }
+        }
+
+        .image {
+            flex-basis: 50%;
+        }
+    }
+
+    .project_btn {
+        text-align: center;
+        margin-top: 80px;
+
+        a {
+            padding: 47px 76px;
+            display: inline-block;
+            color: $white_gray_text;
+            border: 2px solid $white_gray_text;
+            border-radius: 50%;
+            h3{
+                padding-bottom: 0px;
+            }
+        }
+    }
+}

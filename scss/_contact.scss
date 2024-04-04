@@ -1,0 +1,29 @@
+.contact_area{
+    background: $yellow_light;
+    .form_area{
+        h4{
+            padding-bottom: 0;
+            margin-bottom: 40px;
+        }
+        input{
+            margin-bottom: 25px;
+            padding: 16px 0px;
+            background: no-repeat;
+            border: none;
+            border-bottom: 1px solid $c_black_grey;
+            border-radius: 0;
+            &:focus{
+                box-shadow: none;
+            }
+            &::placeholder{
+                color: $c_black_grey;
+            }
+        }
+        .site_btn {
+            @include btn($blue, $blue_light, $c_white);
+            outline: none;
+            border: none;
+        }
+
+    }
+}

@@ -1,0 +1,173 @@
+// foogle fort 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federo&display=swap');
+
+@import "variable";
+
+// display width 
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font_body;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+a {
+  transition: $transition;
+  text-decoration: none;
+  font-family: $font_heading;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font_heading;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 60px;
+  line-height: 70px;
+  padding-bottom: 15px;
+
+  @media (max-width: 992px) {
+    font-size: 55px;
+  }
+  @media (max-width: 768px) {
+    font-size: 45px;
+  }
+
+}
+
+h4 {
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 15px;
+  @media (max-width: 992px) {
+
+    font-size: 25px;
+  line-height: 30px;
+  }
+  @media (max-width: 768px) {
+
+    font-size: 20px;
+  line-height: 30px;
+  }
+}
+
+h5 {
+  font-size: 100px;
+  line-height: 110px;
+
+  @media (max-width: 1200px) {
+
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  @media (max-width: 992px) {
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (max-width: 768px) {
+
+    font-size: 40px;
+    line-height: 50px;
+
+  }
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  line-height: 28px;
+  color: #57595C;
+  font-family: $font_body;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section_padding {
+  padding: 130px 0;
+
+  @media (max-width: 992px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+}
+
+.section_title {
+  max-width: 550px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.wider_width {
+  max-width: 1678px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.full_width {
+  max-width: 1720px;
+  margin: 0 auto;
+}
+.designation {
+  padding-top: 70px;
+  display: inline-block;
+  .company {
+      padding-left: 50px;
+      span {
+          display: inline-block;
+          height: 1px;
+          width: 60px;
+          background: $c_black_grey;
+          margin-right: 10px;
+          margin-bottom: 5px;
+      }
+
+      p {
+        display: inline-block;
+          font-size: 17px;
+          line-height: 28px;
+      }
+  }
+}

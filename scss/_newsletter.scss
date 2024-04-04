@@ -1,0 +1,73 @@
+.newsletter_area {
+    margin-top: -105px;
+    z-index: 1;
+    padding-bottom: 130px;
+    .newsletter_wrapper {
+        background: $blue;
+        border-radius: 20px;
+        color: $c_white;
+        padding: 70px 80px;
+        
+
+        .newslette_form {
+            form {
+                display: flex;
+                justify-content: space-between;
+
+                .from_group {
+                    position: relative;
+                    flex-basis: 68%;
+                    margin-right: 10px;
+                    border-bottom: 1px solid $c_white;
+                    display: flex;
+                    align-items: center;
+                    z-index: 1;
+
+                    input {
+                        background: none;
+                        outline: none;
+                        border: none;
+                        color: $c_white;
+
+                        &:focus {
+                            outline: none;
+                            border: none;
+                        }
+
+                        &::placeholder {
+                            color: $c_white;
+                        }
+                    }
+
+                    img {
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        width: 16px;
+                        height: auto;
+                        transform: translate(-20px, -50%);
+                    }
+
+                    .input_text_bg {
+                        font-size: 100px;
+                        font-family: "Federo", sans-serif;
+                        color: #B1B4BA;
+                        line-height: 70px;
+                        position: absolute;
+                        right: 0;
+                        bottom: -12px;
+                        transform: translate(-8%, 0%);
+                        opacity: 0.2;
+                        z-index: -1;
+                    }
+                }
+                .site_btn {
+                    @include btn($c_yellow, $c_yellow_d, $c_black);
+                    outline: none;
+                    border: none;
+                    flex-basis: 32%;
+                }
+            }
+        }
+    }
+}

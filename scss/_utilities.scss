@@ -1,0 +1,46 @@
+// site button 
+@mixin btn($p_color, $hover_color, $color) {
+    background-color: $p_color;
+    color: $color;
+    text-transform: capitalize;
+    padding: 20px 45px;
+    border-radius: 10px;
+    font-size: $font_18;
+    font-family: $font_heading;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: $transition;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        left: 0%;
+        top: 0;
+        background: $hover_color;
+        content: "";
+        width: 150%;
+        height: 100%;
+        transform: skewX(-20deg);
+        transition: all 0.3s ease;
+        z-index: -1;
+        margin-left: 93%;
+    }
+
+    &:hover::after {
+        left: -10%;
+        margin-left: 0%;
+    }
+    @media (max-width: 1400px) { 
+        padding: 18px 35px;
+     }
+     @media (max-width: 567px) { 
+        padding: 12px 30px;
+     }
+}
+
+@mixin bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

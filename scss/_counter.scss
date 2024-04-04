@@ -1,0 +1,16 @@
+.counter_area {
+    background: url('../img/counter_bg.png');
+    @include bg;
+    padding: 100px 0px;
+
+    .single_counter {
+        color: $c_white;
+        img{
+            padding-bottom: 25px;
+        }
+        h4{
+            color: $c_white_gray;
+            padding-bottom: 20px;
+        }
+    }
+}
